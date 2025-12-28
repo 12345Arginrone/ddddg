@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Новым годом</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: system-ui, Arial, sans-serif;
+            background: linear-gradient(160deg, #0b1d26, #12343b);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 24px;
+            padding: 24px 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+        .qr {
+            background: #fff;
+            border-radius: 16px;
+            padding: 10px;
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 16px;
+        }
+        .qr img {
+            width: 100%;
+            height: 100%;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            padding: 14px;
+            background: #00eaff;
+            color: #00333a;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 14px;
+            font-size: 16px;
+        }
+        a:active {
+            transform: scale(0.98);
+        }
+        .footer {
+            margin-top: 14px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎄 С Новым годом! 🎉</h1>
+            <p>Пусть новый год принесёт удачу, здоровье и хорошие моменты.</p>
+
+            <div class="qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://https://store.steampowered.com/app/3932890/Escape_from_Tarkov/" alt="QR">
+            </div>
+
+            <a href="https://store.steampowered.com/app/3932890/Escape_from_Tarkov/" target="_blank">
+                Перейти по ссылке
+            </a>
+
+            <div class="footer">
+                Сканируй QR или нажми кнопку
+            </div>
+        </div>
+    </div>
+</body>
+</html>
